@@ -28,9 +28,22 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    transition: all 0.5s ease-in-out 0.2s;
     cursor: pointer;
     position: relative;
+}
+
+@keyframes photo {
+    0% {
+        scale: 1;
+    }
+    100%{
+        scale: 1.45;
+    }
+}
+
+.container:hover> .photo{
+    animation: photo 3s ease 0.5s infinite alternate;
+
 }
 
 .details {
@@ -44,26 +57,46 @@ body {
     justify-content: center;
     transition: all 0.5s ease-in-out 0.5s;
     cursor: pointer;
-    color: #bb5207;
-    font-size: 25px;
-    font-weight: 700;
+    color: #ee5d02;
+    font-size: 27px;
+    font-weight: 900;
     text-align: justify;
+}
+
+@keyframes detail {
+    0% {
+        right: 0%;
+    }
+    100%{
+        right: 60%;
+    }
+}
+
+.container:hover> .details{
+
+    animation: detail 3s ease 0.5s infinite alternate;
 
 }
 
-.container:hover{
-    box-shadow: 2px 2px 9px 9px rgb(0, 0, 0);
-}
-.container:hover> .details {
-    right: 0px;
-    background-color: rgba(207, 206, 206, 0.755);
-    box-shadow: 2px 2px 9px 9px rgba(207, 206, 206, 0.755);
-}
-.container:hover> .photo {
-    scale: 1.4;
+.line {
+    width: 0%;
+    height: 3px;
+    background-color: crimson;
+    position: absolute;
+    bottom: 0px;
 }
 
+@keyframes line {
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
 
+.container:hover> .line{
 
-
+    animation: line 3s ease 0.5s infinite alternate;
+}
 
