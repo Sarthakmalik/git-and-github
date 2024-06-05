@@ -39,9 +39,6 @@ body {
     top: 0px;
     right: -360px;
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: all 0.5s ease-in-out 0.5s;
     cursor: pointer;
     color: #bb5207;
@@ -55,12 +52,12 @@ body {
     box-shadow: 2px 2px 9px 9px rgb(0, 0, 0);
 }
 .container:hover> .details {
-    right: 0px;
+    right: 10px;
     background-color: rgba(207, 206, 206, 0.755);
     box-shadow: 2px 2px 9px 9px rgba(207, 206, 206, 0.755);
 }
 .container:hover> .photo {
-    scale: 1.4;
+    scale: 1.45;
 }
 
 

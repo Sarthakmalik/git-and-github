@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(9, 9, 9);
+}
+
+.reel-cointainer {
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-color: rgb(9, 9, 9);
+    gap: 5.5rem;
+    padding: 20px 0;
+    right: 0px;
+    position: absolute;
+
+}
+
+.searchbar {
+    width: 45%;
+    height: 45px;
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+    background-color: rgba(240, 248, 255, 0.651);
+    z-index: 3;
+    position: sticky;
+    top: 0px;
+    margin: 10px 0 0px 0;
+    overflow: hidden;
+}
+.searchbar input {
+    width: 90%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    font-size: 20px;
+    padding: 5px;
+}
+.search-icon{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: rebeccapurple;
+    border-radius: 0 20px 20px 0;
+    background-color: rgb(23, 23, 23);
+
+}
+
+.search-icon i {
+    color: #fff;
+    margin: 0 8px 0 0;
+    font-size: 21px;
+}
+
+.reel-1, .reel-2, .reel-3, .reel-4, .reel-5 {
+    width: 300px;
+    height: 500px;
+    border: 2px solid white;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.video-cointainer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.video-cointainer>video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.icon-cointainer {
+    width: 60px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    gap: 10%;
+    right: 5px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.328);
+    transition: all 0.3s linear 0s ;
+
+}
+.icon>i{
+    font-size: 30px;
+}
+.icon:hover{
+    scale: 1.09;
+    background-color: rgba(255, 255, 255, 0.574);
+    
+}
+
+.sidebar {
+    width: 15%;
+    height: 100%;
+    background-color: rgb(9, 9, 9);
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    border: 1.5px solid rgb(8, 8, 8);
+    overflow: auto;
+
+}
+.sidebar:hover {
+    box-shadow: 2px 2px 10px 1px rgb(15, 15, 15);
+
+}
+
+.nav-option {
+    display: flex;
+    align-items:center;
+    line-height: 2.5rem;
+    gap: 2rem;
+
+}
+.youtube a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 5px 25px 0 0;
+}
+
+.nav .logo {
+    margin: 10px 25px 10px 0px;
+    padding: 2px 0px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo .youtube {
+    margin: 0 18px 0 0;
+}
+
+.nav-option a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+a:hover {
+    cursor: pointer;
+    transform: scale(1.085);
+}
+
+i {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+i:hover {
+    cursor: pointer;
+    transform: scale(1.220);
+}
+
+.you>a {
+    margin: 0px 0px 15px 10px;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+.you>i {
+    margin: 5px 0px 10px 0px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.about{
+    margin: 5px 0 20px 5px;
+}
+
+.about a{
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+    margin: 5px 0 5px 5px;
+}
+.sidebar i{
+    margin: 5px 0 10px 20px;
+}
+
